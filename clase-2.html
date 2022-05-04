@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML - Clase 2</title>
+</head>
+<body>
+    <!-- Enlaces -->
+    <a href="ruta a donde quieren llevar al usuario">Texto</a>
+    <a href="https://www.freecodecamp.org/" target="blank">Ir a freecodecamp</a>
+    <a href="index.html">Inicio</a>
+
+    <br><br><br>
+
+    <!-- Multimedia en HTML -->
+    <!-- Imagenes, Videos, Audios, Iframe -->
+
+    <!-- Imagen -->
+    <img src="imagenes/jarjarbinks_relationship.png" alt="jar jar">
+
+    <!-- Video -->
+    <video src="" controls width="400" height="400"></video>
+
+    <!-- Audio -->
+    <audio src="" controls></audio>
+
+    <!-- Iframe -> insertar contenido externo -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X_albKfraUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Formularios -->
+    <form action="ruta a donde se envia" method="get o post" enctype="encriptacion">
+        <!-- van a colocar si o si los campos del formulario y el boton de envio -->
+        <div>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresar su nombre completo">
+        </div>
+        <div>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" placeholder="Ingresar su Edad">
+        </div>
+        <div>
+            <label for="correo">Email:</label>
+            <input type="email" name="correo" id="correo" placeholder="Ingresar su correo">
+        </div>
+        <div>
+            <label for="clave">Contraseña:</label>
+            <input type="password" name="clave" id="clave" placeholder="Ingresar su Clave">
+        </div>
+        <div>
+            <label for="comentario">Comentario:</label>
+            <textarea placeholder="Ingrese su comentario" name="comentario" id="comentario" cols="20" rows="1"></textarea>
+        </div>
+
+        <div>
+            <!-- Seleccion unica-->
+            <label for="femenino">Femenino:</label>
+            <input type="radio" name="genero" id="femenino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" id="masculino">
+        </div>
+
+        <div>
+            <!-- Seleccion multiple -->
+            <label for="terminos">Aceptar Terminos y Condiciones</label>
+            <input type="checkbox" name="terminos" id="terminos">
+        </div>
+
+        <div>
+            <label for="desarrollo">Desarrollo Web</label>
+            <input type="checkbox" name="cursos" id="desarrollo">
+
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" name="cursos" id="javascript">
+
+            <label for="react">ReactJS</label>
+            <input type="checkbox" name="cursos" id="react">
+        </div>
+
+        <div>
+            <label for="pais">Tipo:</label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasil">Brasil</option>
+            </select>
+        </div>
+
+        <!-- Boton de envio -->
+        <input type="submit" value="Enviar">
+        <button>Enviar</button>
+    </form>
+    
+    <table border="1">
+        <tr>
+            <th>Nombre Completo</th>
+            <th>Asistencia</th>
+            <th>Ausencias</th>
+            <th>Valoraciones</th>
+        </tr>
+        <tr>
+            <td>Leonardo Lovera</td>
+            <td>3</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Agustina Fiala</td>
+            <td>3</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Santiago Vega</td>
+            <td>3</td>
+            <td>0</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+
+    <!-- Los br NO utilizarlos en el proyecto final -->
+    <br><br>
+
+    <!-- Tablas -->
+    <table border="1">
+        <!-- Fila -> tr -->
+        <tr>
+            <!-- Celda -> td (table data)-->
+            <td>Hola Mundo</td>
+            <th>Hola Mundo</th>
+        </tr>
+    </table>
+
+    <!-- Lista anidada -->
+    <ul>
+        <li>Programacion</li>
+        <ul>
+            <li>Desarrollo web</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>BackEnd NodeJS</li>
+        </ul>
+    </ul>
+
+    <!-- Lista desordenada-->
+    <ul>
+        <!-- Item de la lista-->
+        <li>Realizar las compras</li>
+        <li>Ir al banco</li>
+        <li>Pasear al perro</li>
+        <li>Dormir un poco</li>
+        <li>Practicar lo que esta diciendo el profe</li>
+    </ul>
+
+    <!-- Lista Ordenada -->
+    <ol>
+        <li>Ir a la pagina de coderhouse</li>
+        <li>Luego colocar las credenciales y hacer click en iniciar sesion</li>
+        <li>Ingresar a la clase en vivo</li>
+    </ol>
+
+    <!-- Lista de Definicion-->
+    <dl>
+        <!-- Termino a definir -->
+        <dt>HTML</dt>
+        <!-- Definicion del termino -->
+        <dd>Es un lenguaje de marcado para construir nuestros sitios web</dd>
+    </dl>
+</body>
+</html>
